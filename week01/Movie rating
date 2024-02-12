@@ -1,0 +1,27 @@
+import java.util.Scanner
+
+fun main() {
+    val scanner = Scanner(System.`in`)
+
+    // Prompt the user for input
+    print("Enter the movie rating (G, PG, PG-13, R, or NC-17): ")
+    val movieRating = scanner.nextLine()
+
+    print("Enter your age: ")
+    val age = scanner.nextInt()
+
+    // Decision structure to determine eligibility
+    if (age >= 17 && movieRating == "NC-17") {
+        println("You are allowed to watch this movie.")
+    } else if (age >= 13 && movieRating == "R") {
+        println("You are allowed to watch this movie with parental guidance.")
+    } else if (age >= 10 && movieRating == "PG-13") {
+        println("You are allowed to watch this movie with parental guidance.")
+    } else if (age >= 7 && movieRating == "PG") {
+        println("You are allowed to watch this movie with parental guidance.")
+    } else if (movieRating == "G") {
+        println("You are allowed to watch this movie.")
+    } else {
+        println("Sorry, you are not allowed to watch this movie.")
+    }
+}
