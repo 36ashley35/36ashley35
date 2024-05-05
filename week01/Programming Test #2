@@ -1,0 +1,14 @@
+import kotlin.math.PI
+import kotlin.math.sqrt
+
+fun main() {
+    
+    val radius = 12.0
+    val circumference = 2 * PI * radius
+    val roundedCircumference = circumference.toInt()
+    val squareRootOfRoundedCircumference = sqrt(roundedCircumference.toDouble())
+
+    println("Circumference (cf): $circumference")
+    println("Rounded Circumference: $roundedCircumference")
+    println("Square Root of Rounded Circumference: $squareRootOfRoundedCircumference")
+}
