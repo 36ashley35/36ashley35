@@ -1,0 +1,22 @@
+fun main() {
+   
+    val myRange = 10..50
+
+ 
+    val isSeventeenInRange = 17 in myRange
+
+ 
+    val isWNotInDigits = 'w' !in '0'..'9'
+
+   
+    val isHashInDigits = '#' in '0'..'9'
+
+  
+    val sumOfIntegers = myRange.sum()
+
+ 
+    println("Is 17 in the range? $isSeventeenInRange")
+    println("Is 'w' not a digit in the range? $isWNotInDigits")
+    println("Does '#' belong to the range? $isHashInDigits")
+    println("Sum of integers in the range: $sumOfIntegers")
+}
