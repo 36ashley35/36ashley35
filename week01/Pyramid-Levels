@@ -1,0 +1,16 @@
+import java.util.Scanner
+
+fun main() {
+    val scanner = Scanner(System.`in`)
+
+    print("Enter the desired pyramid level: ")
+    val pyramidLevel = scanner.nextInt()
+
+  
+    for (i in 1..pyramidLevel) {
+        for (j in 1..i) {
+            print("*")
+        }
+        println()
+    }
+}
