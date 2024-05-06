@@ -1,0 +1,19 @@
+fun main() {
+    val immlistnums = listOf(30, 17, 11, 5, 21, 3, 45)
+  
+    val totalElements = immlistnums.size
+    println("Total elements in the list by count = $totalElements")
+   
+    println("The element at the 1st index is: ${immlistnums[0]}")
+    println("The element at the 3rd index is: ${immlistnums[2]}")
+    println("The element at the 5th index is: ${immlistnums[4]}")
+    println("The element at the 7th index is: ${immlistnums[6]}")
+
+    val minValue = immlistnums.minOrNull()
+    val maxValue = immlistnums.maxOrNull()
+    val averageValue = immlistnums.average()
+
+    println("The value of the minimum element in the list is: $minValue")
+    println("The value of the maximum element in the list is: $maxValue")
+    println("The average value of the elements in the list is: $averageValue")
+}
