@@ -1,0 +1,20 @@
+fun main() {
+    val stMap = mapOf(
+        123 to "Your Name",
+        245 to "Bob Price",
+        350 to "Jane Doe",
+        425 to "Mary Stone",
+        510 to "Pete King"
+    )
+
+    println("Entries in the Map:")
+    stMap.entries.forEach { (key, value) ->
+        println("$key=$value")
+    }
+
+    println("\nKeys for entries in the Map: ${stMap.keys}")
+
+    println("\nCorresponding Values for entries in the Map: ${stMap.values}")
+
+    println("\nThe size of the Map is: ${stMap.size}")
+}
