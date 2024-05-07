@@ -1,0 +1,13 @@
+fun main() {
+    val setOne = setOf(30, 17, 11, 5, 21)
+    val setTwo = setOf(30, 17, 11, 5, 21, "Your Name", "Bob Price", "Mary Stone")
+
+    println("Number of elements in setOne: ${setOne.size}")
+    println("Number of elements in setTwo: ${setTwo.size}")
+
+    val containsJaneDoe = setTwo.contains("Jane Doe")
+    println("setTwo contains \"Jane Doe\": $containsJaneDoe")
+
+    val containsAllSetOne = setTwo.containsAll(setOne)
+    println("setTwo contains all elements from setOne: $containsAllSetOne")
+}
