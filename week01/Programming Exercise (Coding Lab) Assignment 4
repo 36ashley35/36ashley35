@@ -1,0 +1,20 @@
+import java.util.Scanner
+
+fun main() {
+    val scanner = Scanner(System.`in`)
+
+    println("Enter a whole number integer between 40 and 80:")
+    val input = scanner.nextLine()
+
+    try {
+        val number = input.toInt()
+
+        if (number in 40..80) {
+            println("Good job!! – $number is a whole number integer within the range 40-80! Test passed!")
+        } else {
+            println("Good job!! But while $number is a whole number integer, it is not within the range 40-80! Test passed!")
+        }
+    } catch (e: NumberFormatException) {
+        println("Invalid input; '$input' is NOT a whole number integer! Test passed, good job!")
+    }
+}
