@@ -1,0 +1,16 @@
+fun main (args: Array<String>) {
+    
+val immutableNumbers = listOf(30, 17, 11, 5, 21, 3, 45)
+
+println("Total elements in the list: ${immutableNumbers.size}")
+
+println("Element at index 0: ${immutableNumbers[0]}")
+println("Element at index 2: ${immutableNumbers[2]}")
+println("Element at index 4: ${immutableNumbers[4]}")
+println("Element at index 6: ${immutableNumbers[6]}")
+
+println("Minimum value: ${immutableNumbers.min()}")
+println("Maximum value: ${immutableNumbers.max()}")
+println("Average value: ${immutableNumbers.average()}")
+
+}
